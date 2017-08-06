@@ -70,9 +70,6 @@ header p{
 	width: 100%;
 	position: fixed;
 	top: 0%;
-	box-shadow: 5px 8px 10px rgba(0,0,0,.3);
-	background-color: rgba(0,0,0,.1);
-
 }
 .menu a{
 	text-decoration: none;
