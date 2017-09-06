@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JwoodPhotography</title>
 	<link rel="stylesheet" type="text/css" href="style/nav.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="wrap">
@@ -15,23 +15,27 @@
 			<nav class="mynav">
 				<a href="#">home</a>
 				<a href="#about">about me</a>
-				<a href="#port">portfolio</a>
-				<a href="#cont">contact</a>
+				<a href="#portfolio">portfolio</a>
+				<a href="#contacts">contact</a>
 			</nav>
 		</div>
-		<nav class="menu ">
-			<a href="#">home</a>
-			<a href="#about">about me</a>
-			<a href="#port">portfolio</a>
-			<a href="#cont">contact</a><br>
-		</nav><span class="tophr" id="top"></span>
-		<header class="flex">
-			<figure>
-				<img src="img/logo.png">
-			</figure>
+		<nav role="navigation">
+				<ul class="main-menu">
+					<li><a title="home" href="#header">home</a></li>
+					<li><a title="about me" href="#about">about me</a></li>
+					<li><a title="portfolio" href="#portfolio">portfolio</a></li>
+					<li><a title="contacts" href="#footer">contact</a></li>
+				</ul>
+			</nav>
+		<header class="header">
+			<img role="banner" class="logo" src="img/logo.png">
 			<h1>JWOOD<span>PHOTOGRARHY<span></h1>
-			<p>scroll down to see more</p>
-			<a href="#about"><img src="img/arrow.png" alt="figure" class="arrow"></a>	
+			<div class="scroll centered">
+			<a href="#about">
+			scroll down to see more</a><br>
+			<a href="#contacts"><img src="img/arrow.svg">
+			</a>
+		</div>	
 		</header>
 	<article class="about" id="about">
 		<div class="box">
@@ -43,16 +47,16 @@
 				<p class="sign">Jason Wood</p>
 			</div>
 		</div>
-		<div class="scroll flex">
-			<a href="#port">
+		<div class="scroll centered">
+			<a href="#portfolio">
 			keep scrolling, there is still more to come.</a><br>
-			<a href="#"><img src="img/arrow.png">
+			<a href="#portfolio"><img src="img/arrow.svg">
 			</a>
 		</div>
 	</article>
-	<article class="portfolio" id="port">
+	<article class="portfolio" id="portfolio">
 		<h2>PORTFOLIO</h2>
-		<figure class="max">
+		<div class="max">
 			<img src="img/10.png" alt="photo">
 			<img src="img/2.png" alt="photo">
 			<img src="img/3.png" alt="photo">
@@ -63,26 +67,30 @@
 			<img src="img/8.png" alt="photo">
 			<img src="img/9.png" alt="photo">
 			<img src="img/1.png" alt="photo">
-		</figure>
-		<figure class="mini">
+		</div>
+		<div class="mini">
 			<img src="img/2.png" alt="photo">
 			<img src="img/3.png" alt="photo">
 			<img src="img/4.png" alt="photo">
 			<img src="img/5.png" alt="photo">
 			<img src="img/6.png" alt="photo">
-		</figure>
-		<p class="p">do you want to see it with your own eyes? Scroll!</p>
-		<a href="#cont"><img class="arrow" src="img/arrow.png"></a>
+		</div>
+		<div class="scroll centered">
+			<a href="#contacts">
+			do you want to see it with your own eyes? Scroll!</a><br>
+			<a href="#contacts"><img src="img/arrow.svg">
+			</a>
+		</div>
 	</article>
-		<address id="cont">
+		<address id="contacts">
 			<p>MAIL:</p>
-			<p>JASON@WOOD@.COM</p>
+			<a href="mailto:jason@wood.com" role="link">JASON@WOOD.COM</p>
 			<p>PHONE:</p>
-			<p>+390 73 47 39 380</p>
+			<a href="tel:+390 73 47 39 380" role="link">+390 73 47 39 380</p>
 			<p>SOCIAL MEDIA:</p>
-			<a href="#"><img src="img/fac.png" alt=""></a>
-			<a href="#"><img src="img/twit.png" alt=""></a>
-			<a href="#"><img src="img/inst.png" alt=""></a>
+			<a href="#" role="link"><img src="img/facebook-logo.svg" alt=""></a>
+			<a href="#" role="link"><img src="img/twit.svg" alt=""></a>
+			<a href="#" role="link"><img src="img/insta.svg" alt=""></a>
 		</address>
 		<hr>
 	<footer>
